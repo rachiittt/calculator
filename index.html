@@ -3,9 +3,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="calculator">
+<div class="calculator">
     <form>
-        <input type="text" name="display">
+        <input type="text" name="display" id="display">
     </form>
     <div class="button">
         <button type="button" class="btn btn-yellow" onclick="appendToDisplay('*')">*</button>
@@ -24,11 +24,11 @@
         <button type="button" class="btn btn-grey" onclick="appendToDisplay('0')">0</button>
         <button type="button" class="btn btn-grey" onclick="appendToDisplay('.')">.</button>
         <button type="button" class="btn btn-yellow" onclick="removeLast()">⌫</button>
-        <button type="button" class="btn btn-equal" onclick="claculate()">=</button>
+        <button type="button" class="btn btn-equal" onclick="calculate()">=</button>
         <button type="button" class="btn btn-clear"onclick="clearDisplay()" >C</button>
 
     </div>
-</section>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
